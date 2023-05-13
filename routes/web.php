@@ -97,3 +97,5 @@ Route::group(['prefix' => ''], function () {
 
 });
 
+
+Route::resource('tipoequipos', App\Http\Controllers\tipoequipoController::class);
