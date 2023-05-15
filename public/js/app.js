@@ -6803,7 +6803,7 @@ DataTable.ext.renderer.pageButton.bootstrap = function ( settings, host, idx, bu
 	};
 
 	// IE9 throws an 'unknown error' if document.activeElement is used
-	// inside an iframe or frame. 
+	// inside an iframe or frame.
 	var activeEl;
 
 	try {
@@ -6881,7 +6881,7 @@ _display.modal = function ( options ) {
 				if ( options && options.header ) {
 					var header = _modal.find('div.modal-header');
 					var button = header.find('button').detach();
-					
+
 					header
 						.empty()
 						.append( '<h4 class="modal-title">'+options.header( row )+'</h4>' )
@@ -7710,7 +7710,7 @@ $.extend( Responsive.prototype, {
 				break;
 			}
 		}
-		
+
 		// Show the columns for that break point
 		var columnsVis = this._columnsVisiblity( breakpoint );
 		this.s.current = columnsVis;
@@ -7719,7 +7719,7 @@ $.extend( Responsive.prototype, {
 		// listeners know what the state is. Need to determine if there are
 		// any columns that are not visible but can be shown
 		var collapsedClass = false;
-	
+
 		for ( i=0, ien=columns.length ; i<ien ; i++ ) {
 			if ( columnsVis[i] === false && ! columns[i].never && ! columns[i].control && ! dt.column(i).visible() === false ) {
 				collapsedClass = true;
@@ -7847,7 +7847,7 @@ $.extend( Responsive.prototype, {
 		if ( this.c.details.type === 'inline' ) {
 			$(clonedTable).addClass( 'dtr-inline collapsed' );
 		}
-		
+
 		// It is unsafe to insert elements with the same name into the DOM
 		// multiple times. For example, cloning and inserting a checked radio
 		// clears the chcecked state of the original radio.
@@ -7856,7 +7856,7 @@ $.extend( Responsive.prototype, {
 		// A position absolute table would take the table out of the flow of
 		// our container element, bypassing the height and width (Scroller)
 		$( clonedTable ).css( 'position', 'relative' )
-		
+
 		var inserted = $('<div/>')
 			.css( {
 				width: 1,
@@ -8150,7 +8150,7 @@ Responsive.renderer = {
 					var klass = col.className ?
 						'class="'+ col.className +'"' :
 						'';
-	
+
 					$(
 						'<li '+klass+' data-dtr-index="'+col.columnIndex+'" data-dt-row="'+col.rowIndex+'" data-dt-column="'+col.columnIndex+'">'+
 							'<span class="dtr-title">'+
@@ -17196,7 +17196,8 @@ jQuery.fn.extend( {
 	serialize: function() {
 		return jQuery.param( this.serializeArray() );
 	},
-	serializeArray: function() {
+
+    serializeArray: function() {
 		return this.map( function() {
 
 			// Can add propHook for "elements" to filter or add form elements
@@ -65560,7 +65561,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_AuthorizedClients_vue_vue_type_style_index_0_id_397d14ca_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AuthorizedClients.vue?vue&type=style&index=0&id=397d14ca&scoped=true&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/passport/AuthorizedClients.vue?vue&type=style&index=0&id=397d14ca&scoped=true&lang=css&");
 
-            
+
 
 var options = {};
 
@@ -65590,7 +65591,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Clients_vue_vue_type_style_index_0_id_1552a5b6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Clients.vue?vue&type=style&index=0&id=1552a5b6&scoped=true&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/passport/Clients.vue?vue&type=style&index=0&id=1552a5b6&scoped=true&lang=css&");
 
-            
+
 
 var options = {};
 
@@ -65620,7 +65621,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_PersonalAccessTokens_vue_vue_type_style_index_0_id_49962cc0_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PersonalAccessTokens.vue?vue&type=style&index=0&id=49962cc0&scoped=true&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/passport/PersonalAccessTokens.vue?vue&type=style&index=0&id=49962cc0&scoped=true&lang=css&");
 
-            
+
 
 var options = {};
 
@@ -72928,7 +72929,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
   null,
   "397d14ca",
   null
-  
+
 )
 
 /* hot reload */
@@ -72969,7 +72970,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
   null,
   "1552a5b6",
   null
-  
+
 )
 
 /* hot reload */
@@ -73010,7 +73011,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
   null,
   "49962cc0",
   null
-  
+
 )
 
 /* hot reload */
@@ -73032,7 +73033,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AuthorizedClients_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./AuthorizedClients.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/passport/AuthorizedClients.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AuthorizedClients_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AuthorizedClients_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
@@ -73048,7 +73049,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Clients_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Clients.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/passport/Clients.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Clients_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Clients_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
@@ -73064,7 +73065,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PersonalAccessTokens_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./PersonalAccessTokens.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/passport/PersonalAccessTokens.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PersonalAccessTokens_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PersonalAccessTokens_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 /***/ }),
 
@@ -74263,7 +74264,7 @@ function createTextVNode(val) {
 // multiple renders, cloning them avoids errors when DOM manipulations rely
 // on their elm reference.
 function cloneVNode(vnode) {
-    var cloned = new VNode(vnode.tag, vnode.data, 
+    var cloned = new VNode(vnode.tag, vnode.data,
     // #7975
     // clone children array to avoid mutating original in case of cloning
     // a child.
@@ -75713,7 +75714,7 @@ function bindObjectListeners(data, value) {
     return data;
 }
 
-function resolveScopedSlots(fns, res, 
+function resolveScopedSlots(fns, res,
 // the following are added in 2.6
 hasDynamicKeys, contentHashKey) {
     res = res || { $stable: !hasDynamicKeys };
@@ -77720,7 +77721,7 @@ var uid$1 = 0;
  */
 var Watcher = /** @class */ (function () {
     function Watcher(vm, expOrFn, cb, options, isRenderWatcher) {
-        recordEffectScope(this, 
+        recordEffectScope(this,
         // if the active effect scope is manually created (not a component scope),
         // prioritize it
         activeEffectScope && !activeEffectScope._vm
@@ -78633,14 +78634,14 @@ function createComponent(Ctor, data, context, children, tag) {
     var name = getComponentName(Ctor.options) || tag;
     var vnode = new VNode(
     // @ts-expect-error
-    "vue-component-".concat(Ctor.cid).concat(name ? "-".concat(name) : ''), data, undefined, undefined, undefined, context, 
+    "vue-component-".concat(Ctor.cid).concat(name ? "-".concat(name) : ''), data, undefined, undefined, undefined, context,
     // @ts-expect-error
     { Ctor: Ctor, propsData: propsData, listeners: listeners, tag: tag, children: children }, asyncFactory);
     return vnode;
 }
 function createComponentInstanceForVnode(
 // we know it's MountedComponentVNode but flow doesn't
-vnode, 
+vnode,
 // activeInstance in lifecycle state
 parent) {
     var options = {
@@ -80730,7 +80731,7 @@ function createPatchFunction(backend) {
                 var oldElm = oldVnode.elm;
                 var parentElm = nodeOps.parentNode(oldElm);
                 // create new node
-                createElm(vnode, insertedVnodeQueue, 
+                createElm(vnode, insertedVnodeQueue,
                 // extremely rare edge case: do not insert if old element is in a
                 // leaving transition. Only happens when combining transition +
                 // keep-alive + HOCs. (#4590)
@@ -81106,7 +81107,7 @@ function parseFilters(exp) {
             if (c === 0x2f) {
                 // /
                 var j = i - 1;
-                var p 
+                var p
                 // find first non-whitespace prev char
                 = void 0;
                 // find first non-whitespace prev char
@@ -81630,7 +81631,7 @@ function add(name, handler, capture, passive) {
     target.addEventListener(name, handler, supportsPassive ? { capture: capture, passive: passive } : capture);
 }
 function remove(name, handler, capture, _target) {
-    (_target || target).removeEventListener(name, 
+    (_target || target).removeEventListener(name,
     //@ts-expect-error
     handler._wrapper || handler, capture);
 }
@@ -84632,7 +84633,7 @@ function genElement(el, state) {
             if (!el.plain || (el.pre && maybeComponent)) {
                 data = genData(el, state);
             }
-            var tag 
+            var tag
             // check if this is a component in <script setup>
             = void 0;
             // check if this is a component in <script setup>
@@ -85915,7 +85916,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( true, datatables_net_bs4__WEBPACK_IM
 			tag: 'button',
 			className: 'dt-btn-split-drop-button btn btn-secondary',
 			closeButton: false
-		} 
+		}
 	},
 	buttonCreated: function ( config, button ) {
 		return config.buttons ?
@@ -85988,7 +85989,7 @@ function _fadeOut(el, duration, fn) {
 	}
 	else {
 		el.css('display', 'none');
-		
+
 		if (fn) {
 			fn.call(el);
 		}
@@ -86013,9 +86014,9 @@ var Buttons = function( dt, config )
 
 	// If there is no config set it to an empty object
 	if ( typeof( config ) === 'undefined' ) {
-		config = {};	
+		config = {};
 	}
-	
+
 	// Allow a boolean true for defaults
 	if ( config === true ) {
 		config = {};
@@ -86134,7 +86135,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 		if (draw === undefined || draw === true) {
 			this._draw();
 		}
-	
+
 		return this;
 	},
 
@@ -86144,7 +86145,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 	collectionRebuild: function ( node, newButtons )
 	{
 		var button = this._nodeToButton( node );
-		
+
 		if(newButtons !== undefined) {
 			var i;
 			// Need to reverse the array
@@ -86217,7 +86218,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 		// needed). Take a copy as the array is modified by `remove`
 		var buttons = this.s.buttons.slice();
 		var i, ien;
-		
+
 		for ( i=0, ien=buttons.length ; i<ien ; i++ ) {
 			this.remove( buttons[i].node );
 		}
@@ -86260,7 +86261,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 
 	/**
 	 * Get a button's index
-	 * 
+	 *
 	 * This is internally recursive
 	 * @param {element} node Button to get the index of
 	 * @return {string} Button index
@@ -86528,7 +86529,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 		var buttons = ! Array.isArray( button ) ?
 			[ button ] :
 			button;
-		
+
 		if(button === undefined ) {
 			buttons = !Array.isArray(split) ?
 				[ split ] :
@@ -86538,7 +86539,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 		if (button !== undefined && button.split !== undefined) {
 			isSplit = true;
 		}
-			
+
 		for ( var i=0, ien=buttons.length ; i<ien ; i++ ) {
 			var conf = this._resolveExtends( buttons[i] );
 
@@ -86552,7 +86553,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 			else {
 				isSplit = false;
 			}
-			
+
 			// If the configuration is an array, then expand the buttons at this
 			// point
 			if ( Array.isArray( conf ) ) {
@@ -86573,7 +86574,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 				attachTo.push( built );
 			}
 
-			
+
 			if ( built.conf.buttons || built.conf.split ) {
 				built.collection = jquery__WEBPACK_IMPORTED_MODULE_0__('<'+(isSplit ? this.c.dom.splitCollection.tag : this.c.dom.collection.tag)+'/>');
 
@@ -86658,7 +86659,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 		}
 		else if ( !isSplit && inCollection && collectionDom.button ) {
 			buttonDom = collectionDom.button;
-		} 
+		}
 
 		if ( !isSplit && inSplit && splitCollectionDom.buttonLiner ) {
 			linerDom = splitCollectionDom.buttonLiner
@@ -86677,9 +86678,9 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 		if(!config.hasOwnProperty('html')) {
 			var action = function ( e, dt, button, config ) {
 				config.action.call( dt.button( button ), e, dt, button, config );
-	
+
 				jquery__WEBPACK_IMPORTED_MODULE_0__(dt.table().node()).triggerHandler( 'buttons-action.dt', [
-					dt.button( button ), dt, button, config 
+					dt.button( button ), dt, button, config
 				] );
 			};
 
@@ -86695,7 +86696,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 				.attr( 'aria-controls', this.s.dt.table().node().id )
 				.on( 'click.dtb', function (e) {
 					e.preventDefault();
-	
+
 					if ( ! button.hasClass( buttonDom.disabled ) && config.action ) {
 						action( e, dt, button, config );
 					}
@@ -86712,48 +86713,48 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 						}
 					}
 				} );
-	
+
 			// Make `a` tags act like a link
 			if ( tag.toLowerCase() === 'a' ) {
 				button.attr( 'href', '#' );
 			}
-	
+
 			// Button tags should have `type=button` so they don't have any default behaviour
 			if ( tag.toLowerCase() === 'button' ) {
 				button.attr( 'type', 'button' );
 			}
-	
+
 			if ( linerDom.tag ) {
 				var liner = jquery__WEBPACK_IMPORTED_MODULE_0__('<'+linerDom.tag+'/>')
 					.html( text( config.text ) )
 					.addClass( linerDom.className );
-	
+
 				if ( linerDom.tag.toLowerCase() === 'a' ) {
 					liner.attr( 'href', '#' );
 				}
-	
+
 				button.append( liner );
 			}
 			else {
 				button.html( text( config.text ) );
 			}
-	
+
 			if ( config.enabled === false ) {
 				button.addClass( buttonDom.disabled );
 			}
-	
+
 			if ( config.className ) {
 				button.addClass( config.className );
 			}
-	
+
 			if ( config.titleAttr ) {
 				button.attr( 'title', text( config.titleAttr ) );
 			}
-	
+
 			if ( config.attr ) {
 				button.attr( config.attr );
 			}
-	
+
 			if ( ! config.namespace ) {
 				config.namespace = '.dt-button-'+(_buttonCounter++);
 			}
@@ -86765,7 +86766,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 		else {
 			button = jquery__WEBPACK_IMPORTED_MODULE_0__(config.html)
 		}
-	
+
 		var buttonContainer = this.c.dom.buttonContainer;
 		var inserter;
 		if ( buttonContainer && buttonContainer.tag ) {
@@ -86800,20 +86801,20 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 				},
 				align: this.c.dom.splitDropdown.align,
 				splitAlignClass: this.c.dom.splitDropdown.splitAlignClass
-				
+
 			})
 
 			this._addKey(dropButtonConfig);
 
 			var splitAction = function ( e, dt, button, config ) {
 				_dtButtons.split.action.call( dt.button(splitDiv), e, dt, button, config );
-	
+
 				jquery__WEBPACK_IMPORTED_MODULE_0__(dt.table().node()).triggerHandler( 'buttons-action.dt', [
-					dt.button( button ), dt, button, config 
+					dt.button( button ), dt, button, config
 				] );
 				button.attr('aria-expanded', true)
 			};
-			
+
 			var dropButton = jquery__WEBPACK_IMPORTED_MODULE_0__('<button class="' + this.c.dom.splitDropdown.className + ' dt-button"><span class="dt-btn-split-drop-arrow">'+this.c.dom.splitDropdown.text+'</span></button>')
 				.on( 'click.dtb', function (e) {
 					e.preventDefault();
@@ -87279,7 +87280,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 			}
 
 			if (options.align === 'button-right' || display.hasClass( options.rightAlignClassName )) {
-				left = buttonPosition.left - popoverSizes.width + hostNode.outerWidth(); 
+				left = buttonPosition.left - popoverSizes.width + hostNode.outerWidth();
 			}
 
 			// Container alignment - make sure it doesn't overflow the table container
@@ -87365,7 +87366,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 				} );
 			}, 0);
 		}
-		
+
 		jquery__WEBPACK_IMPORTED_MODULE_0__(display).trigger('buttons-popover.dt');
 
 
@@ -87382,7 +87383,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 					// andSelf is deprecated in jQ1.8, but we want 1.7 compat
 					var back = jquery__WEBPACK_IMPORTED_MODULE_0__.fn.addBack ? 'addBack' : 'andSelf';
 					var parent = jquery__WEBPACK_IMPORTED_MODULE_0__(e.target).parent()[0];
-	
+
 					if (( ! jquery__WEBPACK_IMPORTED_MODULE_0__(e.target).parents()[back]().filter( content ).length  && !jquery__WEBPACK_IMPORTED_MODULE_0__(parent).hasClass('dt-buttons')) || jquery__WEBPACK_IMPORTED_MODULE_0__(e.target).hasClass('dt-button-background')) {
 						close();
 					}
@@ -87433,7 +87434,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0__.extend( Buttons.prototype, {
 /**
  * Show / hide a background layer behind a collection
  * @param  {boolean} Flag to indicate if the background should be shown or
- *   hidden 
+ *   hidden
  * @param  {string} Class to assign to the background
  * @static
  */
@@ -87523,7 +87524,7 @@ Buttons.instanceSelector = function ( group, buttons )
 			ret.push( input );
 		}
 	};
-	
+
 	process( group );
 
 	return ret;
@@ -88341,7 +88342,7 @@ var _exportData = function ( dt, inOpts )
 			return config.format.footer( el ? el.innerHTML : '', idx, el );
 		} ).toArray() :
 		null;
-	
+
 	// If Select is available on this table, and any rows are selected, limit the export
 	// to the selected rows. If no rows are selected, all rows will be exported. Specify
 	// a `selected` modifier to control directly.
@@ -88591,7 +88592,7 @@ datatables_net__WEBPACK_IMPORTED_MODULE_1__["default"].ext.renderer.pageButton.b
 	};
 
 	// IE9 throws an 'unknown error' if document.activeElement is used
-	// inside an iframe or frame. 
+	// inside an iframe or frame.
 	var activeEl;
 
 	try {
@@ -88699,8 +88700,8 @@ var DataTable = function ( selector, options )
 	{
 		return this.api(true).$( sSelector, oOpts );
 	};
-	
-	
+
+
 	/**
 	 * Almost identical to $ in operation, but in this case returns the data for the matched
 	 * rows - as such, the jQuery selector used should match TR row nodes or TD/TH cell nodes
@@ -88753,8 +88754,8 @@ var DataTable = function ( selector, options )
 	{
 		return this.api(true).rows( sSelector, oOpts ).data();
 	};
-	
-	
+
+
 	/**
 	 * Create a DataTables Api instance, with the currently selected tables for
 	 * the Api's context.
@@ -88772,8 +88773,8 @@ var DataTable = function ( selector, options )
 			) :
 			new _Api( this );
 	};
-	
-	
+
+
 	/**
 	 * Add a single new row or multiple rows of data to the table. Please note
 	 * that this is suitable for client-side processing only - if you are using
@@ -88815,20 +88816,20 @@ var DataTable = function ( selector, options )
 	this.fnAddData = function( data, redraw )
 	{
 		var api = this.api( true );
-	
+
 		/* Check if we want to add multiple rows or not */
 		var rows = Array.isArray(data) && ( Array.isArray(data[0]) || $.isPlainObject(data[0]) ) ?
 			api.rows.add( data ) :
 			api.row.add( data );
-	
+
 		if ( redraw === undefined || redraw ) {
 			api.draw();
 		}
-	
+
 		return rows.flatten().toArray();
 	};
-	
-	
+
+
 	/**
 	 * This function will make DataTables recalculate the column sizes, based on the data
 	 * contained in the table and the sizes applied to the columns (in the DOM, CSS or
@@ -88855,7 +88856,7 @@ var DataTable = function ( selector, options )
 		var api = this.api( true ).columns.adjust();
 		var settings = api.settings()[0];
 		var scroll = settings.oScroll;
-	
+
 		if ( bRedraw === undefined || bRedraw ) {
 			api.draw( false );
 		}
@@ -88864,8 +88865,8 @@ var DataTable = function ( selector, options )
 			_fnScrollDraw( settings );
 		}
 	};
-	
-	
+
+
 	/**
 	 * Quickly and simply clear a table
 	 *  @param {bool} [bRedraw=true] redraw the table or not
@@ -88883,13 +88884,13 @@ var DataTable = function ( selector, options )
 	this.fnClearTable = function( bRedraw )
 	{
 		var api = this.api( true ).clear();
-	
+
 		if ( bRedraw === undefined || bRedraw ) {
 			api.draw();
 		}
 	};
-	
-	
+
+
 	/**
 	 * The exact opposite of 'opening' a row, this function will close any rows which
 	 * are currently 'open'.
@@ -88918,8 +88919,8 @@ var DataTable = function ( selector, options )
 	{
 		this.api( true ).row( nTr ).child.hide();
 	};
-	
-	
+
+
 	/**
 	 * Remove a row for the table
 	 *  @param {mixed} target The index of the row from aoData to be deleted, or
@@ -88944,21 +88945,21 @@ var DataTable = function ( selector, options )
 		var rows = api.rows( target );
 		var settings = rows.settings()[0];
 		var data = settings.aoData[ rows[0][0] ];
-	
+
 		rows.remove();
-	
+
 		if ( callback ) {
 			callback.call( this, settings, data );
 		}
-	
+
 		if ( redraw === undefined || redraw ) {
 			api.draw();
 		}
-	
+
 		return data;
 	};
-	
-	
+
+
 	/**
 	 * Restore the table to it's original state in the DOM by removing all of DataTables
 	 * enhancements, alterations to the DOM structure of the table and event listeners.
@@ -88977,8 +88978,8 @@ var DataTable = function ( selector, options )
 	{
 		this.api( true ).destroy( remove );
 	};
-	
-	
+
+
 	/**
 	 * Redraw the table
 	 *  @param {bool} [complete=true] Re-filter and resort (if enabled) the table before the draw.
@@ -88999,8 +89000,8 @@ var DataTable = function ( selector, options )
 		// into account the new data, but can hold position.
 		this.api( true ).draw( complete );
 	};
-	
-	
+
+
 	/**
 	 * Filter the input based on data
 	 *  @param {string} sInput String to filter the table on
@@ -89023,18 +89024,18 @@ var DataTable = function ( selector, options )
 	this.fnFilter = function( sInput, iColumn, bRegex, bSmart, bShowGlobal, bCaseInsensitive )
 	{
 		var api = this.api( true );
-	
+
 		if ( iColumn === null || iColumn === undefined ) {
 			api.search( sInput, bRegex, bSmart, bCaseInsensitive );
 		}
 		else {
 			api.column( iColumn ).search( sInput, bRegex, bSmart, bCaseInsensitive );
 		}
-	
+
 		api.draw();
 	};
-	
-	
+
+
 	/**
 	 * Get the data for the whole table, an individual row or an individual cell based on the
 	 * provided parameters.
@@ -89075,19 +89076,19 @@ var DataTable = function ( selector, options )
 	this.fnGetData = function( src, col )
 	{
 		var api = this.api( true );
-	
+
 		if ( src !== undefined ) {
 			var type = src.nodeName ? src.nodeName.toLowerCase() : '';
-	
+
 			return col !== undefined || type == 'td' || type == 'th' ?
 				api.cell( src, col ).data() :
 				api.row( src ).data() || null;
 		}
-	
+
 		return api.data().toArray();
 	};
-	
-	
+
+
 	/**
 	 * Get an array of the TR nodes that are used in the table's body. Note that you will
 	 * typically want to use the '$' API method in preference to this as it is more
@@ -89109,13 +89110,13 @@ var DataTable = function ( selector, options )
 	this.fnGetNodes = function( iRow )
 	{
 		var api = this.api( true );
-	
+
 		return iRow !== undefined ?
 			api.row( iRow ).node() :
 			api.rows().nodes().flatten().toArray();
 	};
-	
-	
+
+
 	/**
 	 * Get the array indexes of a particular cell from it's DOM element
 	 * and column index including hidden columns
@@ -89148,13 +89149,13 @@ var DataTable = function ( selector, options )
 	{
 		var api = this.api( true );
 		var nodeName = node.nodeName.toUpperCase();
-	
+
 		if ( nodeName == 'TR' ) {
 			return api.row( node ).index();
 		}
 		else if ( nodeName == 'TD' || nodeName == 'TH' ) {
 			var cell = api.cell( node ).index();
-	
+
 			return [
 				cell.row,
 				cell.columnVisible,
@@ -89163,8 +89164,8 @@ var DataTable = function ( selector, options )
 		}
 		return null;
 	};
-	
-	
+
+
 	/**
 	 * Check to see if a row is 'open' or not.
 	 *  @param {node} nTr the table row to check
@@ -89192,8 +89193,8 @@ var DataTable = function ( selector, options )
 	{
 		return this.api( true ).row( nTr ).child.isShown();
 	};
-	
-	
+
+
 	/**
 	 * This function will place a new row directly after a row which is currently
 	 * on display on the page, with the HTML contents that is passed into the
@@ -89232,8 +89233,8 @@ var DataTable = function ( selector, options )
 			.show()
 			.child()[0];
 	};
-	
-	
+
+
 	/**
 	 * Change the pagination - provides the internal logic for pagination in a simple API
 	 * function. With this function you can have a DataTables table go to the next,
@@ -89253,13 +89254,13 @@ var DataTable = function ( selector, options )
 	this.fnPageChange = function ( mAction, bRedraw )
 	{
 		var api = this.api( true ).page( mAction );
-	
+
 		if ( bRedraw === undefined || bRedraw ) {
 			api.draw(false);
 		}
 	};
-	
-	
+
+
 	/**
 	 * Show a particular column
 	 *  @param {int} iCol The column whose display should be changed
@@ -89279,13 +89280,13 @@ var DataTable = function ( selector, options )
 	this.fnSetColumnVis = function ( iCol, bShow, bRedraw )
 	{
 		var api = this.api( true ).column( iCol ).visible( bShow );
-	
+
 		if ( bRedraw === undefined || bRedraw ) {
 			api.columns.adjust().draw();
 		}
 	};
-	
-	
+
+
 	/**
 	 * Get the settings for a particular table for external manipulation
 	 *  @returns {object} DataTables settings object. See
@@ -89306,8 +89307,8 @@ var DataTable = function ( selector, options )
 	{
 		return _fnSettingsFromNode( this[_ext.iApiIndex] );
 	};
-	
-	
+
+
 	/**
 	 * Sort the table by a particular column
 	 *  @param {int} iCol the data index to sort on. Note that this will not match the
@@ -89327,8 +89328,8 @@ var DataTable = function ( selector, options )
 	{
 		this.api( true ).order( aaSort ).draw();
 	};
-	
-	
+
+
 	/**
 	 * Attach a sort listener to an element for a given column
 	 *  @param {node} nNode the element to attach the sort listener to
@@ -89349,8 +89350,8 @@ var DataTable = function ( selector, options )
 	{
 		this.api( true ).order.listener( nNode, iColumn, fnCallback );
 	};
-	
-	
+
+
 	/**
 	 * Update a table cell or row - this method will accept either a single value to
 	 * update the cell with, an array of values with one element for each column or
@@ -89376,25 +89377,25 @@ var DataTable = function ( selector, options )
 	this.fnUpdate = function( mData, mRow, iColumn, bRedraw, bAction )
 	{
 		var api = this.api( true );
-	
+
 		if ( iColumn === undefined || iColumn === null ) {
 			api.row( mRow ).data( mData );
 		}
 		else {
 			api.cell( mRow, iColumn ).data( mData );
 		}
-	
+
 		if ( bAction === undefined || bAction ) {
 			api.columns.adjust();
 		}
-	
+
 		if ( bRedraw === undefined || bRedraw ) {
 			api.draw();
 		}
 		return 0;
 	};
-	
-	
+
+
 	/**
 	 * Provide a common method for plug-ins to check the version of DataTables being used, in order
 	 * to ensure compatibility.
@@ -89413,7 +89414,7 @@ var DataTable = function ( selector, options )
 	 *    } );
 	 */
 	this.fnVersionCheck = _ext.fnVersionCheck;
-	
+
 
 	var _that = this;
 	var emptyInit = options === undefined;
@@ -89446,34 +89447,34 @@ var DataTable = function ( selector, options )
 		var bInitHandedOff = false;
 		var defaults = DataTable.defaults;
 		var $this = $(this);
-		
-		
+
+
 		/* Sanity check */
 		if ( this.nodeName.toLowerCase() != 'table' )
 		{
 			_fnLog( null, 0, 'Non-table node initialisation ('+this.nodeName+')', 2 );
 			return;
 		}
-		
+
 		/* Backwards compatibility for the defaults */
 		_fnCompatOpts( defaults );
 		_fnCompatCols( defaults.column );
-		
+
 		/* Convert the camel-case defaults to Hungarian */
 		_fnCamelToHungarian( defaults, defaults, true );
 		_fnCamelToHungarian( defaults.column, defaults.column, true );
-		
+
 		/* Setting up the initialisation object */
 		_fnCamelToHungarian( defaults, $.extend( oInit, $this.data() ), true );
-		
-		
-		
+
+
+
 		/* Check to see if we are re-initialising a table */
 		var allSettings = DataTable.settings;
 		for ( i=0, iLen=allSettings.length ; i<iLen ; i++ )
 		{
 			var s = allSettings[i];
-		
+
 			/* Base check on table node */
 			if (
 				s.nTable == this ||
@@ -89482,7 +89483,7 @@ var DataTable = function ( selector, options )
 			) {
 				var bRetrieve = oInit.bRetrieve !== undefined ? oInit.bRetrieve : defaults.bRetrieve;
 				var bDestroy = oInit.bDestroy !== undefined ? oInit.bDestroy : defaults.bDestroy;
-		
+
 				if ( emptyInit || bRetrieve )
 				{
 					return s.oInstance;
@@ -89498,7 +89499,7 @@ var DataTable = function ( selector, options )
 					return;
 				}
 			}
-		
+
 			/* If the element we are initialising has the same ID as a table which was previously
 			 * initialised, but the table nodes don't match (from before) then we destroy the old
 			 * instance by simply deleting it. This is under the assumption that the table has been
@@ -89510,14 +89511,14 @@ var DataTable = function ( selector, options )
 				break;
 			}
 		}
-		
+
 		/* Ensure the table has an ID - required for accessibility */
 		if ( sId === null || sId === "" )
 		{
 			sId = "DataTables_Table_"+(DataTable.ext._unique++);
 			this.id = sId;
 		}
-		
+
 		/* Create the settings object for this table and set some of the default parameters */
 		var oSettings = $.extend( true, {}, DataTable.models.oSettings, {
 			"sDestroyWidth": $this[0].style.width,
@@ -89527,29 +89528,29 @@ var DataTable = function ( selector, options )
 		oSettings.nTable = this;
 		oSettings.oApi   = _that.internal;
 		oSettings.oInit  = oInit;
-		
+
 		allSettings.push( oSettings );
-		
+
 		// Need to add the instance after the instance after the settings object has been added
 		// to the settings array, so we can self reference the table instance if more than one
 		oSettings.oInstance = (_that.length===1) ? _that : $this.dataTable();
-		
+
 		// Backwards compatibility, before we apply all the defaults
 		_fnCompatOpts( oInit );
 		_fnLanguageCompat( oInit.oLanguage );
-		
+
 		// If the length menu is given, but the init display length is not, use the length menu
 		if ( oInit.aLengthMenu && ! oInit.iDisplayLength )
 		{
 			oInit.iDisplayLength = Array.isArray( oInit.aLengthMenu[0] ) ?
 				oInit.aLengthMenu[0][0] : oInit.aLengthMenu[0];
 		}
-		
+
 		// Apply the defaults and init options to make a single init object will all
 		// options defined from defaults and instance options.
 		oInit = _fnExtend( $.extend( true, {}, defaults ), oInit );
-		
-		
+
+
 		// Map the initialisation options onto the settings object
 		_fnMap( oSettings.oFeatures, oInit, [
 			"bPaginate",
@@ -89597,7 +89598,7 @@ var DataTable = function ( selector, options )
 			[ "bScrollCollapse", "bCollapse" ]
 		] );
 		_fnMap( oSettings.oLanguage, oInit, "fnInfoCallback" );
-		
+
 		/* Callback functions which are array driven */
 		_fnCallbackReg( oSettings, 'aoDrawCallback',       oInit.fnDrawCallback,      'user' );
 		_fnCallbackReg( oSettings, 'aoServerParams',       oInit.fnServerParams,      'user' );
@@ -89610,25 +89611,25 @@ var DataTable = function ( selector, options )
 		_fnCallbackReg( oSettings, 'aoFooterCallback',     oInit.fnFooterCallback,    'user' );
 		_fnCallbackReg( oSettings, 'aoInitComplete',       oInit.fnInitComplete,      'user' );
 		_fnCallbackReg( oSettings, 'aoPreDrawCallback',    oInit.fnPreDrawCallback,   'user' );
-		
+
 		oSettings.rowIdFn = _fnGetObjectDataFn( oInit.rowId );
-		
+
 		/* Browser support detection */
 		_fnBrowserDetect( oSettings );
-		
+
 		var oClasses = oSettings.oClasses;
-		
+
 		$.extend( oClasses, DataTable.ext.classes, oInit.oClasses );
 		$this.addClass( oClasses.sTable );
-		
-		
+
+
 		if ( oSettings.iInitDisplayStart === undefined )
 		{
 			/* Display start point, taking into account the save saving */
 			oSettings.iInitDisplayStart = oInit.iDisplayStart;
 			oSettings._iDisplayStart = oInit.iDisplayStart;
 		}
-		
+
 		if ( oInit.iDeferLoading !== null )
 		{
 			oSettings.bDeferLoading = true;
@@ -89636,11 +89637,11 @@ var DataTable = function ( selector, options )
 			oSettings._iRecordsDisplay = tmp ? oInit.iDeferLoading[0] : oInit.iDeferLoading;
 			oSettings._iRecordsTotal = tmp ? oInit.iDeferLoading[1] : oInit.iDeferLoading;
 		}
-		
+
 		/* Language definitions */
 		var oLanguage = oSettings.oLanguage;
 		$.extend( true, oLanguage, oInit.oLanguage );
-		
+
 		if ( oLanguage.sUrl )
 		{
 			/* Get the language definitions from a file - because this Ajax call makes the language
@@ -89654,7 +89655,7 @@ var DataTable = function ( selector, options )
 					_fnCamelToHungarian( defaults.oLanguage, json );
 					_fnLanguageCompat( json );
 					$.extend( true, oLanguage, json, oSettings.oInit.oLanguage );
-		
+
 					_fnCallbackFire( oSettings, null, 'i18n', [oSettings]);
 					_fnInitialise( oSettings );
 				},
@@ -89668,7 +89669,7 @@ var DataTable = function ( selector, options )
 		else {
 			_fnCallbackFire( oSettings, null, 'i18n', [oSettings]);
 		}
-		
+
 		/*
 		 * Stripes
 		 */
@@ -89679,7 +89680,7 @@ var DataTable = function ( selector, options )
 				oClasses.sStripeEven
 			];
 		}
-		
+
 		/* Remove row stripe classes if they are already on the table row */
 		var stripeClasses = oSettings.asStripeClasses;
 		var rowOne = $this.children('tbody').find('tr').eq(0);
@@ -89689,7 +89690,7 @@ var DataTable = function ( selector, options )
 			$('tbody tr', this).removeClass( stripeClasses.join(' ') );
 			oSettings.asDestroyStripes = stripeClasses.slice();
 		}
-		
+
 		/*
 		 * Columns
 		 * See if we should load columns automatically or use defined ones
@@ -89702,7 +89703,7 @@ var DataTable = function ( selector, options )
 			_fnDetectHeader( oSettings.aoHeader, nThead[0] );
 			anThs = _fnGetUniqueThs( oSettings );
 		}
-		
+
 		/* If not given a column array, generate one with nulls */
 		if ( oInit.aoColumns === null )
 		{
@@ -89716,18 +89717,18 @@ var DataTable = function ( selector, options )
 		{
 			aoColumnsInit = oInit.aoColumns;
 		}
-		
+
 		/* Add the columns */
 		for ( i=0, iLen=aoColumnsInit.length ; i<iLen ; i++ )
 		{
 			_fnAddColumn( oSettings, anThs ? anThs[i] : null );
 		}
-		
+
 		/* Apply the column definitions */
 		_fnApplyColumnDefs( oSettings, oInit.aoColumnDefs, aoColumnsInit, function (iCol, oDef) {
 			_fnColumnOptions( oSettings, iCol, oDef );
 		} );
-		
+
 		/* HTML5 attribute detection - build an mData object automatically if the
 		 * attributes are found
 		 */
@@ -89735,18 +89736,18 @@ var DataTable = function ( selector, options )
 			var a = function ( cell, name ) {
 				return cell.getAttribute( 'data-'+name ) !== null ? name : null;
 			};
-		
+
 			$( rowOne[0] ).children('th, td').each( function (i, cell) {
 				var col = oSettings.aoColumns[i];
-		
+
 				if (! col) {
 					_fnLog( oSettings, 0, 'Incorrect column count', 18 );
 				}
-		
+
 				if ( col.mData === i ) {
 					var sort = a( cell, 'sort' ) || a( cell, 'order' );
 					var filter = a( cell, 'filter' ) || a( cell, 'search' );
-		
+
 					if ( sort !== null || filter !== null ) {
 						col.mData = {
 							_:      i+'.display',
@@ -89755,20 +89756,20 @@ var DataTable = function ( selector, options )
 							filter: filter !== null ? i+'.@data-'+filter : undefined
 						};
 						col._isArrayHost = true;
-		
+
 						_fnColumnOptions( oSettings, i );
 					}
 				}
 			} );
 		}
-		
+
 		var features = oSettings.oFeatures;
 		var loadedInit = function () {
 			/*
 			 * Sorting
 			 * @todo For modularisation (1.11) this needs to do into a sort start up handler
 			 */
-		
+
 			// If aaSorting is not defined, then we use the first indicator in asSorting
 			// in case that has been altered, so the default sort reflects that option
 			if ( oInit.aaSorting === undefined ) {
@@ -89777,64 +89778,64 @@ var DataTable = function ( selector, options )
 					sorting[i][1] = oSettings.aoColumns[ i ].asSorting[0];
 				}
 			}
-		
+
 			/* Do a first pass on the sorting classes (allows any size changes to be taken into
 			 * account, and also will apply sorting disabled classes if disabled
 			 */
 			_fnSortingClasses( oSettings );
-		
+
 			if ( features.bSort ) {
 				_fnCallbackReg( oSettings, 'aoDrawCallback', function () {
 					if ( oSettings.bSorted ) {
 						var aSort = _fnSortFlatten( oSettings );
 						var sortedColumns = {};
-		
+
 						$.each( aSort, function (i, val) {
 							sortedColumns[ val.src ] = val.dir;
 						} );
-		
+
 						_fnCallbackFire( oSettings, null, 'order', [oSettings, aSort, sortedColumns] );
 						_fnSortAria( oSettings );
 					}
 				} );
 			}
-		
+
 			_fnCallbackReg( oSettings, 'aoDrawCallback', function () {
 				if ( oSettings.bSorted || _fnDataSource( oSettings ) === 'ssp' || features.bDeferRender ) {
 					_fnSortingClasses( oSettings );
 				}
 			}, 'sc' );
-		
-		
+
+
 			/*
 			 * Final init
 			 * Cache the header, body and footer as required, creating them if needed
 			 */
-		
+
 			// Work around for Webkit bug 83867 - store the caption-side before removing from doc
 			var captions = $this.children('caption').each( function () {
 				this._captionSide = $(this).css('caption-side');
 			} );
-		
+
 			var thead = $this.children('thead');
 			if ( thead.length === 0 ) {
 				thead = $('<thead/>').appendTo($this);
 			}
 			oSettings.nTHead = thead[0];
-		
+
 			var tbody = $this.children('tbody');
 			if ( tbody.length === 0 ) {
 				tbody = $('<tbody/>').insertAfter(thead);
 			}
 			oSettings.nTBody = tbody[0];
-		
+
 			var tfoot = $this.children('tfoot');
 			if ( tfoot.length === 0 && captions.length > 0 && (oSettings.oScroll.sX !== "" || oSettings.oScroll.sY !== "") ) {
 				// If we are a scrolling table, and no footer has been given, then we need to create
 				// a tfoot element for the caption element to be appended to
 				tfoot = $('<tfoot/>').appendTo($this);
 			}
-		
+
 			if ( tfoot.length === 0 || tfoot.children().length === 0 ) {
 				$this.addClass( oClasses.sNoFooter );
 			}
@@ -89842,7 +89843,7 @@ var DataTable = function ( selector, options )
 				oSettings.nTFoot = tfoot[0];
 				_fnDetectHeader( oSettings.aoFooter, oSettings.nTFoot );
 			}
-		
+
 			/* Check if there is data passing into the constructor */
 			if ( oInit.aaData ) {
 				for ( i=0 ; i<oInit.aaData.length ; i++ ) {
@@ -89856,13 +89857,13 @@ var DataTable = function ( selector, options )
 				 */
 				_fnAddTr( oSettings, $(oSettings.nTBody).children('tr') );
 			}
-		
+
 			/* Copy the data index array */
 			oSettings.aiDisplay = oSettings.aiDisplayMaster.slice();
-		
+
 			/* Initialisation complete - table can be drawn */
 			oSettings.bInitialised = true;
-		
+
 			/* Check if we need to initialise the table (it might not have been handed off to the
 			 * language processor)
 			 */
@@ -89870,10 +89871,10 @@ var DataTable = function ( selector, options )
 				_fnInitialise( oSettings );
 			}
 		};
-		
+
 		/* Must be done after everything which can be overridden by the state saving! */
 		_fnCallbackReg( oSettings, 'aoDrawCallback', _fnSaveState, 'state_save' );
-		
+
 		if ( oInit.bStateSave )
 		{
 			features.bStateSave = true;
@@ -89882,7 +89883,7 @@ var DataTable = function ( selector, options )
 		else {
 			loadedInit();
 		}
-		
+
 	} );
 	_that = null;
 	return this;
@@ -90177,7 +90178,7 @@ var _flatten = function (out, val) {
 	else {
 		out.push(val);
 	}
-  
+
 	return out;
 }
 
@@ -90186,7 +90187,7 @@ var _includes = function (search, start) {
 		start = 0;
 	}
 
-	return this.indexOf(search, start) !== -1;	
+	return this.indexOf(search, start) !== -1;
 };
 
 // Array.isArray polyfill.
@@ -90215,7 +90216,7 @@ if (! String.prototype.includes) {
 
 /**
  * DataTables utility methods
- * 
+ *
  * This namespace provides helper methods that DataTables uses internally to
  * create a DataTable, but which are not exclusively used only for DataTables.
  * These methods can be used by extension authors to save the duplication of
@@ -90301,26 +90302,26 @@ DataTable.util = {
 				var a = _fnSplitObjNotation( src ), b;
 				var aLast = a[a.length-1];
 				var arrayNotation, funcNotation, o, innerSrc;
-	
+
 				for ( var i=0, iLen=a.length-1 ; i<iLen ; i++ ) {
 					// Protect against prototype pollution
 					if (a[i] === '__proto__' || a[i] === 'constructor') {
 						throw new Error('Cannot set prototype values');
 					}
-	
+
 					// Check if we are dealing with an array notation request
 					arrayNotation = a[i].match(__reArray);
 					funcNotation = a[i].match(__reFn);
-	
+
 					if ( arrayNotation ) {
 						a[i] = a[i].replace(__reArray, '');
 						data[ a[i] ] = [];
-	
+
 						// Get the remainder of the nested object to set so we can recurse
 						b = a.slice();
 						b.splice( 0, i+1 );
 						innerSrc = b.join('.');
-	
+
 						// Traverse each entry in the array setting the properties requested
 						if ( Array.isArray( val ) ) {
 							for ( var j=0, jLen=val.length ; j<jLen ; j++ ) {
@@ -90335,7 +90336,7 @@ DataTable.util = {
 							// is to just save the value.
 							data[ a[i] ] = val;
 						}
-	
+
 						// The inner call to setData has already traversed through the remainder
 						// of the source and has set the data, thus we can exit here
 						return;
@@ -90345,7 +90346,7 @@ DataTable.util = {
 						a[i] = a[i].replace(__reFn, '');
 						data = data[ a[i] ]( val );
 					}
-	
+
 					// If the nested object doesn't currently exist - since we are
 					// trying to set the value - create it
 					if ( data[ a[i] ] === null || data[ a[i] ] === undefined ) {
@@ -90353,7 +90354,7 @@ DataTable.util = {
 					}
 					data = data[ a[i] ];
 				}
-	
+
 				// Last item in the input - i.e, the actual set
 				if ( aLast.match(__reFn ) ) {
 					// Function call
@@ -90365,7 +90366,7 @@ DataTable.util = {
 					data[ aLast.replace(__reArray, '') ] = val;
 				}
 			};
-	
+
 			return function (data, val) { // meta is also passed in, but not used
 				return setData( data, val, source );
 			};
@@ -90392,7 +90393,7 @@ DataTable.util = {
 					o[key] = DataTable.util.get( val );
 				}
 			} );
-	
+
 			return function (data, type, row, meta) {
 				var t = o[type] || o._;
 				return t !== undefined ?
@@ -90422,41 +90423,41 @@ DataTable.util = {
 			 */
 			var fetchData = function (data, type, src) {
 				var arrayNotation, funcNotation, out, innerSrc;
-	
+
 				if ( src !== "" ) {
 					var a = _fnSplitObjNotation( src );
-	
+
 					for ( var i=0, iLen=a.length ; i<iLen ; i++ ) {
 						// Check if we are dealing with special notation
 						arrayNotation = a[i].match(__reArray);
 						funcNotation = a[i].match(__reFn);
-	
+
 						if ( arrayNotation ) {
 							// Array notation
 							a[i] = a[i].replace(__reArray, '');
-	
+
 							// Condition allows simply [] to be passed in
 							if ( a[i] !== "" ) {
 								data = data[ a[i] ];
 							}
 							out = [];
-	
+
 							// Get the remainder of the nested object to get
 							a.splice( 0, i+1 );
 							innerSrc = a.join('.');
-	
+
 							// Traverse each entry in the array getting the properties requested
 							if ( Array.isArray( data ) ) {
 								for ( var j=0, jLen=data.length ; j<jLen ; j++ ) {
 									out.push( fetchData( data[j], type, innerSrc ) );
 								}
 							}
-	
+
 							// If a string is given in between the array notation indicators, that
 							// is used to join the strings together, otherwise an array is returned
 							var join = arrayNotation[0].substring(1, arrayNotation[0].length-1);
 							data = (join==="") ? out : out.join(join);
-	
+
 							// The inner call to fetchData has already traversed through the remainder
 							// of the source requested, so we exit from the loop
 							break;
@@ -90467,7 +90468,7 @@ DataTable.util = {
 							data = data[ a[i] ]();
 							continue;
 						}
-	
+
 						if ( data === null || data[ a[i] ] === undefined ) {
 							return undefined;
 						}
@@ -90475,10 +90476,10 @@ DataTable.util = {
 						data = data[ a[i] ];
 					}
 				}
-	
+
 				return data;
 			};
-	
+
 			return function (data, type) { // row and meta also passed, but not used
 				return fetchData( data, type, source );
 			};
@@ -91101,7 +91102,7 @@ function _fnColumnTypes ( settings )
 	var i, ien, j, jen, k, ken;
 	var col, cell, detectedType, cache;
 
-	// For each column, spin over the 
+	// For each column, spin over the
 	for ( i=0, ien=columns.length ; i<ien ; i++ ) {
 		col = columns[i];
 		cache = [];
@@ -91762,7 +91763,7 @@ function _fnCreateTr ( oSettings, iRow, nTrIn, anTds )
 				row: iRow,
 				column: i
 			};
-			
+
 			cells.push( nTd );
 
 			// Need to create the HTML if new, or if a rendering function is defined
@@ -91911,7 +91912,7 @@ function _fnBuildHead( oSettings )
 
 			if (column) {
 				column.nTf = cells[i].cell;
-	
+
 				if ( column.sClass ) {
 					$(column.nTf).addClass( column.sClass );
 				}
@@ -93133,13 +93134,13 @@ function _fnFilterCreateSearch( search, regex, smart, caseInsensitive )
 	search = regex ?
 		search :
 		_fnEscapeRegex( search );
-	
+
 	if ( smart ) {
 		/* For smart filtering we want to allow the search to work regardless of
 		 * word order. We also want double quoted text to be preserved, so word
 		 * order is important - a la google. So this is what we want to
 		 * generate:
-		 * 
+		 *
 		 * ^(?=.*?\bone\b)(?=.*?\btwo three\b)(?=.*?\bfour\b).*$
 		 */
 		var a = $.map( search.match( /"[^"]+"|[^ ]+/g ) || [''], function ( word ) {
@@ -93930,7 +93931,7 @@ function _fnScrollDraw ( settings )
 	// adjust the column sizes as the table width will have changed to account
 	// for the scrollbar
 	var scrollBarVis = divBodyEl.scrollHeight > divBodyEl.clientHeight;
-	
+
 	if ( settings.scrollBarVis !== scrollBarVis && settings.scrollBarVis !== undefined ) {
 		settings.scrollBarVis = scrollBarVis;
 		_fnAdjustColumnSizing( settings );
@@ -94343,7 +94344,7 @@ function _fnCalculateColumnWidths ( oSettings )
 			.append( tmpTable )
 			.appendTo( tableContainer );
 
-		// When scrolling (X or Y) we want to set the width of the table as 
+		// When scrolling (X or Y) we want to set the width of the table as
 		// appropriate. However, when not scrolling leave the table width as it
 		// is. This results in slightly different, but I think correct behaviour
 		if ( scrollX && scrollXInner ) {
@@ -95008,11 +95009,11 @@ function _fnSaveState ( settings )
 
 	settings.oSavedState = state;
 	_fnCallbackFire( settings, "aoStateSaveParams", 'stateSaveParams', [settings, state] );
-	
+
 	if ( settings.oFeatures.bStateSave && !settings.bDestroying )
 	{
 		settings.fnStateSaveCallback.call( settings.oInstance, settings, state );
-	}	
+	}
 }
 
 
@@ -95147,7 +95148,7 @@ function _fnImplementState ( settings, s, callback) {
 				$.extend( settings.aoPreSearchCols[i], _fnSearchToHung( col.search ) );
 			}
 		}
-		
+
 		// If the api is defined then we need to adjust the columns once the visibility has been changed
 		if (api) {
 			api.columns.adjust();
@@ -96700,7 +96701,7 @@ var __row_selector = function ( settings, selector, opts )
 			// need to fall through to jQuery in case there is DOM id that
 			// matches
 		}
-		
+
 		// Get nodes in the order from the `rows` array with null values removed
 		var nodes = _removeEmpty(
 			_pluck_order( settings.aoData, rows, 'nTr' )
@@ -97459,13 +97460,13 @@ _api_registerPlural( 'columns().visible()', 'column().visible()', function ( vis
 			// Redraw the header after changes
 			_fnDrawHead( settings, settings.aoHeader );
 			_fnDrawHead( settings, settings.aoFooter );
-	
+
 			// Update colspan for no records display. Child rows and extensions will use their own
 			// listeners to do this - only need to update the empty table item here
 			if ( ! settings.aiDisplay.length ) {
 				$(settings.nTBody).find('td[colspan]').attr('colspan', _fnVisbleColumns(settings));
 			}
-	
+
 			_fnSaveState( settings );
 
 			// Second loop once the first is done for events
@@ -97556,7 +97557,7 @@ var __cell_selector = function ( settings, selector, opts )
 
 			return a;
 		}
-		
+
 		// Selector - index
 		if ( $.isPlainObject( s ) ) {
 			// Valid cell index and its in the array of selectable rows
@@ -100424,7 +100425,7 @@ DataTable.defaults = {
 		 * However, multiple different tables on the page can use different
 		 * decimal place characters.
 		 *  @type string
-		 *  @default 
+		 *  @default
 		 *
 		 *  @dtopt Language
 		 *  @name DataTable.defaults.language.decimal
@@ -100588,7 +100589,7 @@ DataTable.defaults = {
 		/**
 		 * Assign a `placeholder` attribute to the search `input` element
 		 *  @type string
-		 *  @default 
+		 *  @default
 		 *
 		 *  @dtopt Language
 		 *  @name DataTable.defaults.language.searchPlaceholder
@@ -100792,7 +100793,7 @@ DataTable.defaults = {
 	 * * `full` - 'First', 'Previous', 'Next' and 'Last' buttons
 	 * * `full_numbers` - 'First', 'Previous', 'Next' and 'Last' buttons, plus page numbers
 	 * * `first_last_numbers` - 'First' and 'Last' buttons, plus page numbers
-	 *  
+	 *
 	 * Further methods can be added using {@link DataTable.ext.oPagination}.
 	 *  @type string
 	 *  @default simple_numbers
@@ -102716,7 +102717,7 @@ DataTable.models.oSettings = {
 
 /**
  * DataTables extensions
- * 
+ *
  * This namespace acts as a collection area for plug-ins that can be used to
  * extend DataTables capabilities. Indeed many of the build in methods
  * use this method to provide their own capabilities (sorting methods for
@@ -102758,7 +102759,7 @@ DataTable.ext = _ext = {
 
 	/**
 	 * Error reporting.
-	 * 
+	 *
 	 * How should DataTables report an error. Can take the value 'alert',
 	 * 'throw', 'none' or a function.
 	 *
@@ -102770,14 +102771,14 @@ DataTable.ext = _ext = {
 
 	/**
 	 * Feature plug-ins.
-	 * 
+	 *
 	 * This is an array of objects which describe the feature plug-ins that are
 	 * available to DataTables. These feature plug-ins are then available for
 	 * use through the `dom` initialisation option.
-	 * 
+	 *
 	 * Each feature plug-in is described by an object which must have the
 	 * following properties:
-	 * 
+	 *
 	 * * `fnInit` - function that is used to initialise the plug-in,
 	 * * `cFeature` - a character so the feature can be enabled by the `dom`
 	 *   instillation option. This is case sensitive.
@@ -102788,7 +102789,7 @@ DataTable.ext = _ext = {
 	 *    {@link DataTable.models.oSettings}
 	 *
 	 * And the following return is expected:
-	 * 
+	 *
 	 * * {node|null} The element which contains your feature. Note that the
 	 *   return may also be void if your plug-in does not require to inject any
 	 *   DOM elements into DataTables control (`dom`) - for example this might
@@ -102810,7 +102811,7 @@ DataTable.ext = _ext = {
 
 	/**
 	 * Row searching.
-	 * 
+	 *
 	 * This method of searching is complimentary to the default type based
 	 * searching, and a lot more comprehensive as it allows you complete control
 	 * over the searching logic. Each element in this array is a function
@@ -102902,7 +102903,7 @@ DataTable.ext = _ext = {
 
 	/**
 	 * Internal functions, exposed for used in plug-ins.
-	 * 
+	 *
 	 * Please note that you should not need to use the internal methods for
 	 * anything other than a plug-in (and even then, try to avoid if possible).
 	 * The internal function may change between releases.
@@ -102933,7 +102934,7 @@ DataTable.ext = _ext = {
 
 	/**
 	 * Pagination plug-in methods.
-	 * 
+	 *
 	 * Each entry in this object is a function and defines which buttons should
 	 * be shown by the pagination rendering method that is used for the table:
 	 * {@link DataTable.ext.renderer.pageButton}. The renderer addresses how the
@@ -102987,16 +102988,16 @@ DataTable.ext = _ext = {
 
 	/**
 	 * Ordering plug-ins - custom data source
-	 * 
+	 *
 	 * The extension options for ordering of data available here is complimentary
 	 * to the default type based ordering that DataTables typically uses. It
 	 * allows much greater control over the the data that is being used to
 	 * order a column, but is necessarily therefore more complex.
-	 * 
+	 *
 	 * This type of ordering is useful if you want to do ordering based on data
 	 * live from the DOM (for example the contents of an 'input' element) rather
 	 * than just the static string that DataTables knows of.
-	 * 
+	 *
 	 * The way these plug-ins work is that you create an array of the values you
 	 * wish to be ordering for the column in question and then return that
 	 * array. The data in the array much be in the index order of the rows in
@@ -103091,7 +103092,7 @@ DataTable.ext = _ext = {
 		 *
 		 * Note that is a search is not defined for a column of a given type,
 		 * no search formatting will be performed.
-		 * 
+		 *
 		 * Pre-processing of searching data plug-ins - When you assign the sType
 		 * for a column (or have it automatically detected for you by DataTables
 		 * or a type detection plug-in), you will typically be using this for
@@ -103161,7 +103162,7 @@ DataTable.ext = _ext = {
 		 *   than the second parameter, ===0 if the two parameters are equal and
 		 *   >0 if the first parameter should be sorted height than the second
 		 *   parameter.
-		 * 
+		 *
 		 *  @type object
 		 *  @default {}
 		 *
@@ -103372,7 +103373,7 @@ $.extend( extPagination, {
 	full_numbers: function ( page, pages ) {
 		return [ 'first', 'previous', _numbers(page, pages), 'next', 'last' ];
 	},
-	
+
 	first_last_numbers: function (page, pages) {
  		return ['first', _numbers(page, pages), 'last'];
  	},
@@ -103464,7 +103465,7 @@ $.extend( true, DataTable.ext.renderer, {
 						if ( btnDisplay !== null ) {
 							var tag = settings.oInit.pagingTag || 'a';
 							var disabled = btnClass.indexOf(disabledClass) !== -1;
-		
+
 
 							node = $('<'+tag+'>', {
 									'class': classes.sPageButton+' '+btnClass,
@@ -103572,7 +103573,7 @@ $.extend( DataTable.ext.type.detect, [
 
 // Filter formatting functions. See model.ext.ofnSearch for information about
 // what is required from these methods.
-// 
+//
 // Note that additional search methods are added for the html numbers and
 // html formatted numbers by `_addNumericSort()` when we know what the decimal
 // place is
@@ -103604,7 +103605,7 @@ var __numericReplace = function ( d, decimalPlace, re1, re2 ) {
 	if ( d !== 0 && (!d || d === '-') ) {
 		return -Infinity;
 	}
-	
+
 	let type = typeof d;
 
 	if (type === 'number' || type === 'bigint') {
@@ -103818,7 +103819,7 @@ function __mld( dt, momentFn, luxonFn, dateFn, arg1 ) {
 	else if (window.luxon) {
 		return dt[luxonFn]( arg1 );
 	}
-	
+
 	return dateFn ? dt[dateFn]( arg1 ) : dt;
 }
 
@@ -103916,7 +103917,7 @@ function __mlHelper (localeString) {
 						: 1;
 			}
 		}
-	
+
 		return function ( d, type ) {
 			// Allow for a default value
 			if (d === null || d === undefined) {
@@ -103961,7 +103962,7 @@ function __mlHelper (localeString) {
 			if (type === 'sort') {
 				return dt;
 			}
-			
+
 			var formatted = to === null
 				? __mld(dt, 'toDate', 'toJSDate', '')[localeString]()
 				: __mld(dt, 'format', 'toFormat', 'toISOString', to);
@@ -103982,7 +103983,7 @@ var __decimal = '.';
 if (Intl) {
 	try {
 		var num = new Intl.NumberFormat().formatToParts(100000.1);
-	
+
 		for (var i=0 ; i<num.length ; i++) {
 			if (num[i].type === 'group') {
 				__thousands = num[i].value;
@@ -104267,7 +104268,7 @@ $.each( DataTable, function ( prop, val ) {
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -104281,20 +104282,20 @@ $.each( DataTable, function ( prop, val ) {
 /******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/chunk loaded */
 /******/ 	(() => {
@@ -104327,7 +104328,7 @@ $.each( DataTable, function ( prop, val ) {
 /******/ 			return result;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -104339,7 +104340,7 @@ $.each( DataTable, function ( prop, val ) {
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -104351,7 +104352,7 @@ $.each( DataTable, function ( prop, val ) {
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -104363,12 +104364,12 @@ $.each( DataTable, function ( prop, val ) {
 /******/ 			}
 /******/ 		})();
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -104379,7 +104380,7 @@ $.each( DataTable, function ( prop, val ) {
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nmd = (module) => {
@@ -104388,11 +104389,11 @@ $.each( DataTable, function ( prop, val ) {
 /******/ 			return module;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/jsonp chunk loading */
 /******/ 	(() => {
 /******/ 		// no baseURI
-/******/ 		
+/******/
 /******/ 		// object to store loaded and loading chunks
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
@@ -104400,19 +104401,19 @@ $.each( DataTable, function ( prop, val ) {
 /******/ 			"/js/app": 0,
 /******/ 			"css/app": 0
 /******/ 		};
-/******/ 		
+/******/
 /******/ 		// no chunk on demand loading
-/******/ 		
+/******/
 /******/ 		// no prefetching
-/******/ 		
+/******/
 /******/ 		// no preloaded
-/******/ 		
+/******/
 /******/ 		// no HMR
-/******/ 		
+/******/
 /******/ 		// no HMR manifest
-/******/ 		
+/******/
 /******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
+/******/
 /******/ 		// install a JSONP callback for chunk loading
 /******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
 /******/ 			var [chunkIds, moreModules, runtime] = data;
@@ -104437,25 +104438,25 @@ $.each( DataTable, function ( prop, val ) {
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
-/******/ 		
+/******/
 /******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
 /******/ 	__webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/js/app.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+/******/
 /******/ })()
 ;

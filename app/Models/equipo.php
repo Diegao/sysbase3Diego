@@ -43,16 +43,16 @@ class equipo extends Model
 
     public function tipo(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\SoporteEquipoTipo::class, 'tipo_id');
+        return $this->belongsTo(\App\Models\tipoequipo::class, 'tipo_id');
     }
 
     public function soporteClientes(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
-        return $this->belongsToMany(\App\Models\SoporteCliente::class, 'soporte_equipo_has_cliente');
+        return $this->belongsToMany(\App\Models\clientes::class, 'soporte_equipo_has_cliente');
     }
 
     public function soporteServicios(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\SoporteServicio::class, 'equipo_id');
+        return $this->hasMany(\App\Models\servicios::class, 'equipo_id');
     }
 }

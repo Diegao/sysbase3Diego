@@ -31,10 +31,10 @@ class servicios extends Model
         'problema' => 'string',
         'solucion' => 'string',
         'recomendaciones' => 'string',
-        'fecha_recibido' => 'datetime',
-        'fecha_inicio' => 'datetime',
-        'fecha_fin' => 'datetime',
-        'fecha_entrega' => 'datetime'
+        'fecha_recibido' => 'date: Y-m-d',
+        'fecha_inicio' => 'date: Y-m-d',
+        'fecha_fin' => 'date: Y-m-d',
+        'fecha_entrega' => 'date: Y-m-d'
     ];
 
     public static $rules = [
@@ -59,16 +59,20 @@ class servicios extends Model
 
     public function cliente(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\SoporteCliente::class, 'cliente_id', 'id');
+        return $this->belongsTo(\App\Models\clientes::class, 'cliente_id', 'id');
     }
 
     public function equipo(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\SoporteEquipo::class, 'equipo_id', 'id');
+        return $this->belongsTo(\App\Models\equipo::class, 'equipo_id', 'id');
     }
 
     public function usuario(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(\App\Models\User::class, 'usuario_id');
     }
+
+
+
+
 }

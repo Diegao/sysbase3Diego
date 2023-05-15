@@ -29,7 +29,40 @@ class serviciosDataTable extends DataTable
                 return $servicios->id;
 
             })
-            ->rawColumns(['action']);
+            ->rawColumns(['action'])
+
+//
+//
+//            ->editColumn('equipo_id',function (servicios $servicios){
+//
+//                return $servicios->equipo->numero_serie;
+//
+//            })
+
+            ->editColumn('usuario_id',function (servicios $servicios){
+
+                return $servicios->usuario->name;
+
+            })
+
+            ->editColumn('cliente_id',function (servicios $servicios){
+
+                return $servicios->cliente->nombres  . ' ' . $servicios->cliente->apeliidos ;
+
+            })
+
+            ->editColumn('equipo_id',function (servicios $servicios){
+
+                return $servicios->equipo->tipo->nombre ?? 'null';
+
+
+
+            })
+
+            ;
+
+
+
     }
 
     /**
@@ -40,7 +73,44 @@ class serviciosDataTable extends DataTable
      */
     public function query(servicios $model)
     {
-        return $model->newQuery()->select($model->getTable().'.*');
+        return $model->newQuery()
+
+
+
+
+
+
+->with(['usuario:id,name'])
+
+ ->with(['cliente:id,nombres'])
+
+ ->with(['equipo:id,numero_serie']);
+
+
+//            ->with(['cliente:id,nombres']);
+
+
+
+//            ->select([
+//
+//                'usuario_id',
+////                'cliente_id',
+//                'cliente_id',
+//                'problema',
+//                'solucion',
+//                'recomendaciones',
+//                'fecha_recibido',
+//                'fecha_inicio',
+//                'fecha_fin',
+//                'fecha_entrega',
+//
+//
+//                ]);
+
+
+//        return $model->newQuery()->select($model->getTable().'.*');
+//    }
+
     }
 
     /**
@@ -107,21 +177,48 @@ class serviciosDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            Column::make('usuario_id'),
-            Column::make('cliente_id'),
-            Column::make('equipo_id'),
-            Column::make('problema'),
-            Column::make('solucion'),
-            Column::make('recomendaciones'),
-            Column::make('fecha_recibido'),
-            Column::make('fecha_inicio'),
-            Column::make('fecha_fin'),
-            Column::make('fecha_entrega'),
-            Column::computed('action')
-                ->exportable(false)
-                ->printable(false)
-                ->width('20%')
-                ->addClass('text-center')
+
+
+
+            'usuario_id'=>['title'=> 'Usuario', 'name' => 'usuario.name', 'data' => 'usuario.name', 'orderable' => 'false'],
+
+            'cliente_id'=>['title'=> 'Cliente', 'name' => 'cliente.nombres', 'data' => 'cliente.nombres', 'orderable' => 'false'],
+
+            'equipo_id'=>['title'=> 'Equipo', 'name' => 'equipo.numero_serie', 'data' => 'equipo.numero_serie', 'orderable' => 'false'],
+
+//            'tipo_id'=>['title'=> 'numero serie', 'name' => 'equipo_id', 'data' => 'tipo_id', 'orderable' => 'false'],
+
+            'problema',
+
+            'solucion',
+
+            'recomendaciones',
+
+            'fecha_recibido',
+
+            'fecha_inicio',
+
+            'fecha_fin',
+
+            'fecha_entrega'
+
+
+//            Column::make('usuario.name'),
+//            Column::make('cliente_id'),
+//            Column::make('equipo_id'),
+//            Column::make('usuario.name'),
+//            Column::make('problema'),
+//            Column::make('solucion'),
+//            Column::make('recomendaciones'),
+//            Column::make('fecha_recibido'),
+//            Column::make('fecha_inicio'),
+//            Column::make('fecha_fin'),
+//            Column::make('fecha_entrega'),
+//            Column::computed('action')
+//                ->exportable(false)
+//                ->printable(false)
+//                ->width('20%')
+//                ->addClass('text-center')
         ];
     }
 

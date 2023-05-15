@@ -29,7 +29,14 @@ class equipoDataTable extends DataTable
                 return $equipo->id;
 
             })
-            ->rawColumns(['action']);
+            ->rawColumns(['action'])
+
+            ->editColumn('tipo_id',function (equipo $equipo){
+
+                return $equipo->tipo->nombre;
+
+            })
+            ;
     }
 
     /**
@@ -40,7 +47,19 @@ class equipoDataTable extends DataTable
      */
     public function query(equipo $model)
     {
-        return $model->newQuery()->select($model->getTable().'.*');
+
+
+    return $model->newQuery()->with(['tipo:id,nombre']);
+
+
+
+
+
+
+//        return $model->newQuery()->select($model->getTable().'.*');
+
+
+
     }
 
     /**
@@ -106,17 +125,32 @@ class equipoDataTable extends DataTable
      */
     protected function getColumns()
     {
+
         return [
-            Column::make('tipo_id'),
-            Column::make('numero_serie'),
-            Column::make('imei'),
-            Column::make('observaciones'),
-            Column::computed('action')
-                ->exportable(false)
-                ->printable(false)
-                ->width('20%')
-                ->addClass('text-center')
+
+        'tipo_id'=>['title'=> 'Tipo Equipo', 'name' => 'tipo.nombre', 'data' => 'tipo.nombre', 'orderable' => 'false'],
+
+        'numero_serie',
+
+        'imei',
+
+        'observaciones'
+
         ];
+
+
+
+//        return [
+//            Column::make('tipo_id'),
+//            Column::make('numero_serie'),
+//            Column::make('imei'),
+//            Column::make('observaciones'),
+//            Column::computed('action')
+//                ->exportable(false)
+//                ->printable(false)
+//                ->width('20%')
+//                ->addClass('text-center')
+//        ];
     }
 
     /**
