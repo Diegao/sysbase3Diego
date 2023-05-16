@@ -20,25 +20,22 @@ class serviciosDataTable extends DataTable
 
         return datatables()
             ->eloquent($query)
-            ->addColumn('action', function(servicios $servicios){
-                $id = $servicios->id;
-                return view('servicios.datatables_actions',compact('servicios','id'));
-            })
-            ->editColumn('id',function (servicios $servicios){
+            ->addColumn('action', 'equipos.datatables_actions')
 
-                return $servicios->id;
 
-            })
-            ->rawColumns(['action'])
-
+//            ->addColumn('action', function(servicios $servicios){
+//                $id = $servicios->id;
+//                return view('servicios.datatables_actions',compact('servicios','id'));
+//            })
+//            ->editColumn('id',function (servicios $servicios){
 //
-//
-//            ->editColumn('equipo_id',function (servicios $servicios){
-//
-//                return $servicios->equipo->numero_serie;
+//                return $servicios->id;
 //
 //            })
+//            ->rawColumns(['action'])
 
+//
+//
             ->editColumn('usuario_id',function (servicios $servicios){
 
                 return $servicios->usuario->name;
@@ -51,13 +48,22 @@ class serviciosDataTable extends DataTable
 
             })
 
-            ->editColumn('equipo_id',function (servicios $servicios){
+            ->editColumn('tipo_id',function (servicios $servicios){
 
                 return $servicios->equipo->tipo->nombre ?? 'null';
 
 
 
             })
+
+
+            ->editColumn('equipo_id',function (servicios $servicios){
+
+                return $servicios->equipo->numero_serie;
+
+            })
+
+
 
             ;
 
@@ -80,16 +86,28 @@ class serviciosDataTable extends DataTable
 
 
 
-->with(['usuario:id,name'])
+            ->with(['usuario:id,name'])
 
- ->with(['cliente:id,nombres'])
+            ->with(['cliente:id,nombres'])
 
- ->with(['equipo:id,numero_serie']);
+            ->with(['equipo:id,numero_serie'])
+
+            ->with(['equipo.tipo:id,nombre'])
 
 
-//            ->with(['cliente:id,nombres']);
+        ->whereIn('equipo_id',function ($q){
+        $q->select('id')->from('soporte_equipos')->whereNull('deleted_at');
+        })
 
+            ->whereIn('cliente_id',function ($q){
+                $q->select('id')->from('soporte_clientes')->whereNull('deleted_at');
+            })
 
+        ->whereIn('usuario_id',function ($q){
+            $q->select('id')->from('users')->whereNull('deleted_at');
+        })
+
+            ; //cierra
 
 //            ->select([
 //
@@ -186,7 +204,7 @@ class serviciosDataTable extends DataTable
 
             'equipo_id'=>['title'=> 'Equipo', 'name' => 'equipo.numero_serie', 'data' => 'equipo.numero_serie', 'orderable' => 'false'],
 
-//            'tipo_id'=>['title'=> 'numero serie', 'name' => 'equipo_id', 'data' => 'tipo_id', 'orderable' => 'false'],
+            'tipo_id'=>['title'=> 'Tipo Equipo', 'name' => 'equipo.tipo.nombre', 'data' => 'equipo.tipo.nombre', 'orderable' => 'false'],
 
             'problema',
 
@@ -200,7 +218,8 @@ class serviciosDataTable extends DataTable
 
             'fecha_fin',
 
-            'fecha_entrega'
+            'fecha_entrega',
+            'action'
 
 
 //            Column::make('usuario.name'),

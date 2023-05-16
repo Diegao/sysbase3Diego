@@ -33,9 +33,11 @@ class equipoDataTable extends DataTable
 
             ->editColumn('tipo_id',function (equipo $equipo){
 
-                return $equipo->tipo->nombre;
+                return $equipo->tipo->nombre ?? '';
 
             })
+
+
             ;
     }
 
@@ -49,7 +51,18 @@ class equipoDataTable extends DataTable
     {
 
 
-    return $model->newQuery()->with(['tipo:id,nombre']);
+    return $model->newQuery()
+
+
+
+        ->with(['tipo:id,nombre'])
+
+
+        ->whereIn('tipo_id',function ($q){
+            $q->select('id')->from('soporte_equipo_tipos')->whereNull('deleted_at');
+        })
+
+        ;
 
 
 
@@ -134,7 +147,10 @@ class equipoDataTable extends DataTable
 
         'imei',
 
-        'observaciones'
+        'observaciones',
+
+
+            'action'
 
         ];
 

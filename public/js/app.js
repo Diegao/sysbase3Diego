@@ -5194,7 +5194,8 @@ __webpack_require__(/*! bootstrap-toggle/js/bootstrap-toggle.js */ "./node_modul
 
 
 // register globally
-Vue.component('multiselect', (vue_multiselect__WEBPACK_IMPORTED_MODULE_0___default()));
+Vue.component(
+    'multiselect', (vue_multiselect__WEBPACK_IMPORTED_MODULE_0___default()));
 
 Vue.use((vue_js_toggle_button__WEBPACK_IMPORTED_MODULE_1___default()));
 window.number_format = __webpack_require__(/*! number_format-php */ "./node_modules/number_format-php/index.js");
