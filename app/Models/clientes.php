@@ -50,11 +50,11 @@ class clientes extends Model
 
     public function soporteEquipos(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
-        return $this->belongsToMany(\App\Models\SoporteEquipo::class, 'soporte_equipo_has_cliente');
+        return $this->belongsToMany(\App\Models\equipo::class, 'soporte_equipo_has_cliente');
     }
 
     public function soporteServicios(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(\App\Models\SoporteServicio::class, 'cliente_id');
+        return $this->hasMany(\App\Models\servicios::class, 'cliente_id');
     }
 }

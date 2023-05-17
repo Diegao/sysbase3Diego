@@ -85,6 +85,8 @@ class serviciosController extends AppBaseController
         return view('servicios.edit')->with('servicios', $servicios);
     }
 
+
+
     /**
      * Update the specified servicios in storage.
      */
@@ -106,6 +108,8 @@ class serviciosController extends AppBaseController
 
         return redirect(route('servicios.index'));
     }
+
+
 
     /**
      * Remove the specified servicios from storage.

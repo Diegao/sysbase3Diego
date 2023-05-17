@@ -20,7 +20,7 @@ class serviciosDataTable extends DataTable
 
         return datatables()
             ->eloquent($query)
-            ->addColumn('action', 'equipos.datatables_actions')
+            ->addColumn('action', 'servicios.datatables_actions')
 
 
 
@@ -80,15 +80,15 @@ class serviciosDataTable extends DataTable
             ->with(['equipo.tipo:id,nombre'])
 
 
-        ->whereIn('id',function ($q){
+        ->whereIn('equipo_id',function ($q){
         $q->select('id')->from('soporte_equipos')->whereNull('deleted_at');
         })
 
-        ->whereIn('id',function ($q){
+        ->whereIn('cliente_id',function ($q){
                 $q->select('id')->from('soporte_clientes')->whereNull('deleted_at');
             })
 
-        ->whereIn('id',function ($q){
+        ->whereIn('usuario_id',function ($q){
             $q->select('id')->from('users')->whereNull('deleted_at');
         })
 
@@ -158,18 +158,18 @@ class serviciosDataTable extends DataTable
                         ->addClass('')
                         ->text('<i class="fa fa-download"></i> <span class="d-none d-sm-inline">Exportar</span>')
                         ->buttons([
-                            Button::make('print')
-                                ->addClass('dropdown-item')
-                                ->text('<i class="fa fa-print"></i> <span class="d-none d-sm-inline"> Imprimir</span>'),
-                            Button::make('csv')
-                                ->addClass('dropdown-item')
-                                ->text('<i class="fa fa-file-csv"></i> <span class="d-none d-sm-inline"> Csv</span>'),
-                            Button::make('pdf')
-                                ->addClass('dropdown-item')
-                                ->text('<i class="fa fa-file-pdf"></i> <span class="d-none d-sm-inline"> Pdf</span>'),
-                            Button::make('excel')
-                                ->addClass('dropdown-item')
-                                ->text('<i class="fa fa-file-excel"></i> <span class="d-none d-sm-inline"> Excel</span>'),
+                    Button::make('print')
+                        ->addClass('dropdown-item')
+                        ->text('<i class="fa fa-print"></i> <span class="d-none d-sm-inline"> Imprimir</span>'),
+                    Button::make('csv')
+                        ->addClass('dropdown-item')
+                        ->text('<i class="fa fa-file-csv"></i> <span class="d-none d-sm-inline"> Csv</span>'),
+                    Button::make('pdf')
+                        ->addClass('dropdown-item')
+                        ->text('<i class="fa fa-file-pdf"></i> <span class="d-none d-sm-inline"> Pdf</span>'),
+                    Button::make('excel')
+                        ->addClass('dropdown-item')
+                        ->text('<i class="fa fa-file-excel"></i> <span class="d-none d-sm-inline"> Excel</span>'),
                         ]),
                 );
     }
@@ -184,47 +184,49 @@ class serviciosDataTable extends DataTable
         return [
 
 
+//
+//            'usuario_id'=>['title'=> 'Usuario', 'name' => 'usuario.name', 'data' => 'usuario.name', 'orderable' => 'false'],
+//
+//            'cliente_id'=>['title'=> 'Cliente', 'name' => 'cliente.nombres', 'data' => 'cliente.nombres', 'orderable' => 'false'],
+//
+//            'equipo_id'=>['title'=> 'Equipo', 'name' => 'equipo.numero_serie', 'data' => 'equipo.numero_serie', 'orderable' => 'false'],
+//
+//            'tipo_id'=>['title'=> 'Tipo Equipo', 'name' => 'equipo.tipo.nombre', 'data' => 'equipo.tipo.nombre', 'orderable' => 'false'],
+//
+//            'problema',
+//
+//            'solucion',
+//
+//            'recomendaciones',
+//
+//            'fecha_recibido',
+//
+//            'fecha_inicio',
+//
+//            'fecha_fin',
+//
+//            'fecha_entrega',
+//
+//
+//            'action'
 
-            'usuario_id'=>['title'=> 'Usuario', 'name' => 'usuario.name', 'data' => 'usuario.name', 'orderable' => 'false'],
 
-            'cliente_id'=>['title'=> 'Cliente', 'name' => 'cliente.nombres', 'data' => 'cliente.nombres', 'orderable' => 'false'],
-
-            'equipo_id'=>['title'=> 'Equipo', 'name' => 'equipo.numero_serie', 'data' => 'equipo.numero_serie', 'orderable' => 'false'],
-
-            'tipo_id'=>['title'=> 'Tipo Equipo', 'name' => 'equipo.tipo.nombre', 'data' => 'equipo.tipo.nombre', 'orderable' => 'false'],
-
-            'problema',
-
-            'solucion',
-
-            'recomendaciones',
-
-            'fecha_recibido',
-
-            'fecha_inicio',
-
-            'fecha_fin',
-
-            'fecha_entrega',
-            'action'
-
-
-//            Column::make('usuario.name'),
-//            Column::make('cliente_id'),
-//            Column::make('equipo_id'),
-//            Column::make('usuario.name'),
-//            Column::make('problema'),
-//            Column::make('solucion'),
-//            Column::make('recomendaciones'),
-//            Column::make('fecha_recibido'),
-//            Column::make('fecha_inicio'),
-//            Column::make('fecha_fin'),
-//            Column::make('fecha_entrega'),
-//            Column::computed('action')
-//                ->exportable(false)
-//                ->printable(false)
-//                ->width('20%')
-//                ->addClass('text-center')
+            Column::make('usuario.name'),
+            Column::make('cliente.nombres'),
+            Column::make('equipo_id'),
+            Column::make('equipo.tipo.nombre'),
+            Column::make('problema'),
+            Column::make('solucion'),
+            Column::make('recomendaciones'),
+            Column::make('fecha_recibido'),
+            Column::make('fecha_inicio'),
+            Column::make('fecha_fin'),
+            Column::make('fecha_entrega'),
+            Column::computed('action')
+                ->exportable(false)
+                ->printable(false)
+                ->width('20%')
+                ->addClass('text-center')
         ];
     }
 
