@@ -23,16 +23,6 @@ class serviciosDataTable extends DataTable
             ->addColumn('action', 'equipos.datatables_actions')
 
 
-//            ->addColumn('action', function(servicios $servicios){
-//                $id = $servicios->id;
-//                return view('servicios.datatables_actions',compact('servicios','id'));
-//            })
-//            ->editColumn('id',function (servicios $servicios){
-//
-//                return $servicios->id;
-//
-//            })
-//            ->rawColumns(['action'])
 
 //
 //
@@ -55,7 +45,6 @@ class serviciosDataTable extends DataTable
 
 
             })
-
 
             ->editColumn('equipo_id',function (servicios $servicios){
 
@@ -82,10 +71,6 @@ class serviciosDataTable extends DataTable
         return $model->newQuery()
 
 
-
-
-
-
             ->with(['usuario:id,name'])
 
             ->with(['cliente:id,nombres'])
@@ -95,17 +80,19 @@ class serviciosDataTable extends DataTable
             ->with(['equipo.tipo:id,nombre'])
 
 
-        ->whereIn('equipo_id',function ($q){
+        ->whereIn('id',function ($q){
         $q->select('id')->from('soporte_equipos')->whereNull('deleted_at');
         })
 
-            ->whereIn('cliente_id',function ($q){
+        ->whereIn('id',function ($q){
                 $q->select('id')->from('soporte_clientes')->whereNull('deleted_at');
             })
 
-        ->whereIn('usuario_id',function ($q){
+        ->whereIn('id',function ($q){
             $q->select('id')->from('users')->whereNull('deleted_at');
         })
+
+
 
             ; //cierra
 

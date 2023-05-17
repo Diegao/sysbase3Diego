@@ -64,7 +64,7 @@ class servicios extends Model
 
     public function equipo(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsTo(\App\Models\equipo::class, 'equipo_id', 'id');
+        return $this->belongsTo(\App\Models\equipo::class, 'equipo_id');
     }
 
     public function usuario(): \Illuminate\Database\Eloquent\Relations\BelongsTo

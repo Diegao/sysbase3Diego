@@ -1,18 +1,19 @@
 <!-- Tipo Id Field -->
 
-  <div class="form-group col-sm-6" id="root">
 
-        <label for="tipoequipo">Tipo </label>
+<div class="form-group col-sm-6" id="root">
 
-        <multiselect v-model="tipoequipo" :options="tipoequipos" label="nombre" placeholder="Selecciones uno" >
+    <label for="tipoequipo">Tipo </label>
 
-            </multiselect>
+    <multiselect v-model="tipoequipo" :options="tipoequipos" label="nombre" placeholder="Selecciones uno" >
 
-        <input type="hidden" name="tipo_id" id="tipo_id" :value="tipoId">
+    </multiselect>
 
-        <input type="hidden" name="tipo_name" id="tipo_name" :value="tipoName">
+    <input type="hidden" name="tipo_id" id="tipo_id" :value="tipoId">
 
-  </div>
+    <input type="hidden" name="tipo_name" id="tipo_name" :value="tipoName">
+
+</div>
 
 
 
@@ -21,9 +22,9 @@
 
 <div class="form-group col-sm-6">
 
-      {!! Form::label('numero_serie', 'Numero Serie:') !!}
+    {!! Form::label('numero_serie', 'Numero Serie:') !!}
 
-      {!! Form::text('numero_serie', null, ['class' => 'form-control', 'required']) !!}
+    {!! Form::text('numero_serie', null, ['class' => 'form-control', 'required']) !!}
 
 </div>
 
@@ -34,9 +35,9 @@
 
 <div class="form-group col-sm-6">
 
-      {!! Form::label('imei', 'Imei:') !!}
+    {!! Form::label('imei', 'Imei:') !!}
 
-      {!! Form::text('imei', null, ['class' => 'form-control']) !!}
+    {!! Form::text('imei', null, ['class' => 'form-control']) !!}
 
 </div>
 
@@ -47,9 +48,9 @@
 
 <div class="form-group col-sm-12 col-lg-12">
 
-      {!! Form::label('observaciones', 'Observaciones:') !!}
+    {!! Form::label('observaciones', 'Observaciones:') !!}
 
-      {!! Form::textarea('observaciones', null, ['class' => 'form-control']) !!}
+    {!! Form::textarea('observaciones', null, ['class' => 'form-control']) !!}
 
 </div>
 
@@ -95,10 +96,10 @@
 
 
 
+
                 tipoequipos: @json(\App\Models\tipoequipo::all() ?? []),
 
                 tipoequipo: @json(\App\Models\tipoequipo::whereId(old('tipo_id'))->first() ?? $equipo->tipo ?? null),
-
 
 
 
