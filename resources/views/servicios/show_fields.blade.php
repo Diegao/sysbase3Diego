@@ -1,19 +1,19 @@
 <!-- Usuario Id Field -->
 <div class="col-sm-12">
     {!! Form::label('usuario_id', 'Usuario Id:') !!}
-    <p>{{ $servicios->usuario->name }}</p>
+    <p>{{ $servicios->usuario_id }}</p>
 </div>
 
 <!-- Cliente Id Field -->
 <div class="col-sm-12">
     {!! Form::label('cliente_id', 'Cliente Id:') !!}
-    <p>{{ $servicios->cliente->nombres }}</p>
+    <p>{{ $servicios->cliente_id }}</p>
 </div>
 
 <!-- Equipo Id Field -->
 <div class="col-sm-12">
     {!! Form::label('equipo_id', 'Equipo Id:') !!}
-    <p>{{ $servicios->equipo->numero_serie }}</p>
+    <p>{{ $servicios->equipo_id }}</p>
 </div>
 
 <!-- Problema Field -->
@@ -37,24 +37,24 @@
 <!-- Fecha Recibido Field -->
 <div class="col-sm-12">
     {!! Form::label('fecha_recibido', 'Fecha Recibido:') !!}
-    <p>{{ fechaLtn($servicios->fecha_recibido) }}</p>
+    <p>{{ $servicios->fecha_recibido }}</p>
 </div>
 
 <!-- Fecha Inicio Field -->
 <div class="col-sm-12">
     {!! Form::label('fecha_inicio', 'Fecha Inicio:') !!}
-    <p>{{ fechaLtn($servicios->fecha_inicio) }}</p>
+    <p>{{ $servicios->fecha_inicio }}</p>
 </div>
 
 <!-- Fecha Fin Field -->
 <div class="col-sm-12">
     {!! Form::label('fecha_fin', 'Fecha Fin:') !!}
-    <p>{{ fechaLtn($servicios->fecha_fin) }}</p>
+    <p>{{ $servicios->fecha_fin }}</p>
 </div>
 
 <!-- Fecha Entrega Field -->
 <div class="col-sm-12">
     {!! Form::label('fecha_entrega', 'Fecha Entrega:') !!}
-    <p>{{ fechaLtn($servicios->fecha_entrega) }}</p>
+    <p>{{ $servicios->fecha_entrega }}</p>
 </div>
 
